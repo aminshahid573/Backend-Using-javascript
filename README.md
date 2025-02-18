@@ -30,10 +30,10 @@ Backend development involves building the server-side logic of web applications.
 
 1.  **Install Node.js and npm**: Download and install Node.js, which includes npm (Node Package Manager) [2].
 
-````
+```
     node -v
     npm -v
-    ```
+```
 
 02.  **Create a Project Folder**:
 
