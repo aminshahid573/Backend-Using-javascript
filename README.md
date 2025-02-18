@@ -35,9 +35,7 @@ node -v
 npm -v
 ```
 
-02.  **Create a Project Folder**:
-
-
+2.  **Create a Project Folder**:
 
 ```powershell
 mkdir my-node-project
@@ -76,49 +74,43 @@ _Express.js_ is a framework that simplifies building Node.js backend application
 1.  **Create `server.js`**: The entry point of your application [1].
 
 ```javascript
-    const express = require('express');
-    const app = express();
+const express = require("express");
+const app = express();
 
-    app.get('/', (req, res) => {
-    res.send('<h1>Hello, Express.js Server!</h1>');
-    });
+app.get("/", (req, res) => {
+  res.send("<h1>Hello, Express.js Server!</h1>");
+});
 
-    const port = 3000;
-    app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-    });
-    ```
-
-02.  **Run Your Server**:
-
-
-
+const port = 3000;
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
 ```
 
-    node server.js
-    ```
+2.  **Run Your Server**:
+
+```powershell
+node server.js
+```
 
 3.  **Define Routes**: How your server responds to different URL requests [2].
 
 ```javascript
-    app.get('/about', (req, res) => {
-    res.send('This is the about page');
-    });
+app.get("/about", (req, res) => {
+  res.send("This is the about page");
+});
 
-    app.get('/contact', (req, res) => {
-    res.send('This is the contact page');
-    });
-    ```
-
-    Use `nodemon` for automatic server restarts:
-
-
-
+app.get("/contact", (req, res) => {
+  res.send("This is the contact page");
+});
 ```
 
-    npm install -g nodemon
-    nodemon server.js
-    ```
+Use `nodemon` for automatic server restarts:
+
+```powershell
+npm install -g nodemon
+nodemon server.js
+```
 
 ## **Proxy and CORS in Vite**
 
@@ -127,15 +119,15 @@ _Vite_ is a build tool that improves the front-end development experience. Confi
 ```javascript
 
 export default defineConfig({
-server: {
-proxy: {
-'/api': {
-target: 'http://localhost:3000',
-changeOrigin: true,
-rewrite: (path) => path.replace(/^/api/, ''),
-},
-},
-},
+  server: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3000',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^/api/, ''),
+            },
+          },
+        },
 });
 ```
 
