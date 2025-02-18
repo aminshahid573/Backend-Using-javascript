@@ -39,7 +39,7 @@ Backend development involves building the server-side logic of web applications.
 
 
 
-````
+```
 
 mkdir my-node-project
 cd my-node-project
@@ -57,7 +57,7 @@ cd my-node-project
 
 4.  **Install Express.js**:
 
-`````
+```
 
     npm install express
     ```
@@ -83,7 +83,7 @@ _Express.js_ is a framework that simplifies building Node.js backend application
 
 1.  **Create `server.js`**: The entry point of your application [1].
 
-````javascript
+```javascript
     const express = require('express');
     const app = express();
 
@@ -101,14 +101,14 @@ _Express.js_ is a framework that simplifies building Node.js backend application
 
 
 
-`````
+```
 
     node server.js
     ```
 
 3.  **Define Routes**: How your server responds to different URL requests [2].
 
-````javascript
+```javascript
     app.get('/about', (req, res) => {
     res.send('This is the about page');
     });
@@ -122,7 +122,7 @@ _Express.js_ is a framework that simplifies building Node.js backend application
 
 
 
-````
+```
 
     npm install -g nodemon
     nodemon server.js
