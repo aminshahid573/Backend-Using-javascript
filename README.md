@@ -31,36 +31,28 @@ Backend development involves building the server-side logic of web applications.
 1.  **Install Node.js and npm**: Download and install Node.js, which includes npm (Node Package Manager) [2].
 
 ```
-    node -v
-    npm -v
+node -v
+npm -v
 ```
 
 02.  **Create a Project Folder**:
 
 
 
-```
-
+```powershell
 mkdir my-node-project
 cd my-node-project
-
 ```
 
 3.  **Initialize Your Project**:
 
-```
+`npm init`
 
-    npm init
-    ```
-
-    This creates a `package.json` file to manage dependencies [2].
+This creates a `package.json` file to manage dependencies [2].
 
 4.  **Install Express.js**:
 
-```
-
-    npm install express
-    ```
+`npm install express`
 
 A basic folder structure includes:
 
